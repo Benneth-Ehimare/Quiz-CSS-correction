@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <h1>Quiz CSS correction</h1>
+        <div class="container">
+            <h2><span>1</span> - Que signifie CSS?</h2>
+        <p><b>Feuilles de style en cascade</b> <br>En anglais : Cascading Style Sheets</p>
+            <hr>
+        <h2><span>2</span> - Quel est le bon HTML pour faire référence à une feuille de style externe?</h2>
+            <h4>&lt;link rel="stylesheet" type= "text/css" href = "mystyle.css"&gt;</h4>
+            <hr>
+        <h2><span>3</span> - Quelle balise HTML est utilisé pour définir une feuille de style interne?</h2>
+            <p><b>&lt;style&gt;</p>
+            <hr>
+         <h2><span>4</span> - Comment insérer un commentaire dans un fichier CSS?</h2>
+            <p><b>/ * Ceci est un commentaire * /</b></p>
+            <hr>
+            <h2><span>5</span> - Quelle est la propriété qui est utilisée pour changer la couleur d'une bordure?</h2>
+            <p><b>border-color</b></p>
+            Exemple :<br><br>
+            img{ <br>
+            border-style: dashed;<br>
+            border-color: #ff325a;<br>
+            }<br><br>
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/4e/5c/f7/4e5cf7d4ccb9c59b6620a9c71944d51e.jpg" alt="">
+            <style>
+                img{
+                    border-style: dashed;
+                    border-color: #ff325a;
+                }
+            </style>
+            <hr>
+            <h2><span>6</span> -Quelle propriété CSS contrôle la taille du texte?</h2>
+            <p><b>font-size</b></p>
+            Exemple :<br><br>
+            p { <br>
+            font-size: 20px;<br>
+            }<br><br>
+            <hr>
+            <h2><span>7</span> - Quelle est la syntaxe CSS correcte pour mettre tous les éléments &lt;p&gt; gras?</h2>
+            <p><b>p {font-weight: bold;}</b></p>
+            <hr>
+            <h2><span>8</span> - Comment afficher des liens sans soulignement?</h2>
+            <p><b>a {text-decoration: none;}</b></p>
+            <hr>
+            <h2><span>9</span> - Comment faire commencer chaque mot d'un texte par une lettre majuscule?</h2>
+            <p><b>text-transform : capitalize;</b></p>
+            <hr>
+            <h2><span>10</span> -Comment importer des polices de caractères en CSS ?</h2>
+            <p><b>@font-face {font-family: "MaPolice"; src: url("/fonts/MaPolice.");</b></p>
+            <hr>
+            <h2><span>11</span> - Comment afficher des lites à puce en forme de "carré" ? </h2>
+            <p><b>list-style-type: square;</b></p>
+            Exemple :<br>
+            <ul>
+                <li>Kiwi</li>
+                <li>Pomme</li>
+                <li>Poire</li>
+            </ul>
+            <style>
+                li{
+                    list-style: square;
+                }
+            </style>
+            <hr>
+            <h2><span>12</span> - Quelle est la valeur par défaut d'une position en CSS ?</h2>
+            <p><b>position: static</b></p>
+            <hr>
+            <h2><span>13</span> - Dans la règle suivante, quel élément deviendra rouge ? strong#intro {background-color: red;} </h2>
+            <p><b>L'élément &lt;strong&gt; dont l'id est "intro"</b></p>
+            <hr>
+            <h2><span>14</span> - Combien de règles peut contenir un fichier CSS ?</h2>
+            <p><b>Il n'y a pas de limite, on peut encréer autant que l'on veut</b></p>
+            <hr>
+            <h2><span>15</span> - Soit un conteneur "div" auquel on veut donner une largeur *visible* totale de 760 pixels. Avec quel style obtiendra-t-on ce résultat ? Note : le modèle de boite standard des CSS est bien sûr appliqué.</h2>
+            <p><b>div {width: 700px; padding: 29px; border-width: 1px; margin: 0;}</b></p>
+            Exemple :<br>
+            <div class="box">Div 760px {width: 700px; padding: 29px; border-width: 1px; margin: 0;}</div>
+            <div class="box2">Div {width: 760px;} </div>
+            <style>
+                .box{width: 700px; padding: 29px; border: 1px solid #222 ; margin: 0;
+                    background-color: #777dff;}
+                .box2{width: 760px;background-color: #bbbbae;}
+            </style>
+            <hr>
+            <h2><span>16</span> - Comment faire pour qu'une div prenne toute la largeur disponible dans son bloc conteneur ?</h2>
+            <p><b>C'est automatique, pas besoin de spécifier une largeur.</b></p>
+            <hr>
+            <h2><span>17</span> - Dans quel ordre doit-on placer, dans le code HTML, deux éléments que l'on veut placer côte à côte, en sachant qu'un seul de ces éléments sera flottant ?</h2>
+            <p><b>L'élément flottant d'abord, puis l'élément non flottant.</b></p>
+            Exemple :<br>
+                <div class="element1">élément flottant</div>
+                <div class="element2">élément non flottant</div>
+            <style>
+                .element1{float:right;width:200px;height:100px;padding:10px;background-color: #eee}
+                .element2{width: 200px;height: 100px;padding:10px;background-color: #777dff;}
+
+            </style>
+            <hr>
+            <h2><span>18</span> - Le positionnement relatif (position: relative)...</h2>
+            <p><b>Permet de décaler un élément par rapport à sa position "normale", en flux</b></p>
+            <hr>
+            <h2><span>19</span> - Où se placera un élément positionné en absolu (position: absolute) avec left: 100px ?</h2>
+            <p><b>À 100px du bord gauche de son plus proche ancêtre positionné.</b></p>
+            Exemple :<br>
+           <div class="ancetre">
+               <div class="parent">
+                   <div class="element">Je suis là !</div>
+                   parent
+               </div>
+               ancètre
+           </div>
+            <style>
+                .ancetre{position: relative;width:500px;height:150px;background-color: #eee}
+                .parent{width: 200px;height: 100px;
+                    margin-left: auto;background-color: #ff325a;}
+                .element{
+                    position: absolute;
+                    left: 100px;
+                    padding: 5px;
+                    background-color: chartreuse;}
+            </style>
+            <hr>
+            <h2><span>20</span> - Après une image flottante à droite (float: right;), on place un titre h2. Comment être sûr qu'il se placera en dessous de l'image flottante ?</h2>
+            <p><b>h2 {clear: right;}</b></p>
+            <hr>
+            <h2><span>21</span> - Comment déclarer une puce image ?</h2>
+            <p><b>li {list-style-type: disc; list-style-image: url(image.png);}</b></p>
+            <ul class="puce">
+                <li>Ma belle puce image!</li>
+                <li>Ma belle puce image!</li>
+                <li>Ma belle puce image!</li>
+            </ul>
+            <style>
+                .puce li {list-style-type: disc; list-style-image: url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBkePwk.img?h=16&w=16&m=6&q=60&u=t&o=t&l=f&f=png');}
+            </style>
+            <hr>
+            <h2><span>21</span> - Comment peut-on figer la taille des caractères pour être sûr d'avoir exactement le même rendu partout ?</h2>
+            <p><b>On ne peut pas figer la taille des caractères pour être sûr d'avoir exactement le même rendu partout. C'est impossible.</b></p>
+            <hr>
+
+
+
+        </div>
+    </body>
+</html>
